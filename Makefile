@@ -11,13 +11,10 @@ BUILD_BIN = app
 BUILD_ALL = $(BUILD_DIR)/$(BUILD_BIN)
 
 SRC_DIR = src
-SRC = \
-	main.cpp \
-	a.cpp \
-	$(NULL)
+SRC = $(wildcard $(SRC_DIR)/*.cpp)
 
 OBJ_DIR = obj
-OBJS = $(SRC:%.cpp=$(OBJ_DIR)/%.o)
+OBJS = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
 # Runs the project
 run: $(BUILD_ALL)
