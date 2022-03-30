@@ -3,5 +3,6 @@
 *.o
 *.lib
 *.a
-build/*
+build/app
+build/app.exe
 ext/*
