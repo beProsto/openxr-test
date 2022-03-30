@@ -5,4 +5,3 @@
 *.a
 build/app
 build/app.exe
-ext/*
